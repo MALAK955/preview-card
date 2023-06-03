@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --first-card: hsl(31, 77%, 52%);
+    --second-card: hsl(184, 100%, 22%);
+    --third-card: hsl(179, 100%, 13%);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --background-h-btn: hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+}
+
+section {
+    background-color: var(--background-h-btn);
+    min-height: 1502px;
+    display: flex;
+    flex-direction: column;
+}
+
+section div {
+    padding-left: 20px;
+}
+
+/* styling card-1 */
+.card-1 {
+    width: 70%;
+    height: 300px;
+    align-self: center;
+    background-color: var(--first-card);
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+
+img {
+    margin-top: 25px;
+}
+
+h1 {
+    color: var(--background-h-btn);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.content p,
+.content-2 p,
+.content-3 p {
+    color: var(--paragraph);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.btn-1 .link {
+    color: var(--first-card);
+    background-color: var(--background-h-btn);
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid var(--background-h-btn);
+    transition: all 0.5s ease;
+}
+
+/* styling card-2 */
+.card-2 {
+    background-color: var(--second-card);
+    width: 70%;
+    height: 300px;
+    align-self: center;
+}
+
+.btn-2 a {
+    color: var(--second-card);
+    background-color: var(--background-h-btn);
+    border: 1px solid var(--background-h-btn);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+/* styling card-3 */
+.card-3 {
+    background-color: var(--third-card);
+    width: 70%;
+    height: 300px;
+    align-self: center;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+
+}
+
+.btn-3 a {
+    color: var(--third-card);
+    background-color: var(--background-h-btn);
+    border: 1px solid var(--background-h-btn);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+
+.link:hover {
+    background-color: transparent;
+    color: var(--background-h-btn);
+}
+
+
+@media screen and (min-width:700px) {
+    section {
+        flex-direction: row;
+        min-height: 100px;
+        margin-top: 20px;
+    }
+    .card-1 {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 9px;
+    }
+
+    .card-3 {
+        border-top-right-radius: 9px;
+        border-bottom-left-radius: 0;
+    }
+}
